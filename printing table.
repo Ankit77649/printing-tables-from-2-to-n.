@@ -1,0 +1,11 @@
+class Tables:
+    def _init_(self,a):
+        self.a=a
+    def printtables(self):
+        for i in range(2,self.a+1):
+            print("Multiplication Table of",i,"is.")
+            for j in range(1,11):
+                print(i,"X",j,"=",j*i)
+Num=int(input("Enter a Number: "))
+obj=Tables(Num)
+obj.printtables()
